@@ -1,0 +1,181 @@
+.home {
+  background-color: black;
+  color: white; /* Also set text to white for readability */
+}
+
+.home h2, 
+.home .link-with-line,
+.home .section-header,
+.home .product-title,
+.home .product-price {
+  color: white;
+}
+
+.home .product-meta {
+  color: #ccc;
+}
+
+.home .link-with-line {
+  border-bottom-color: white;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 6px;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  color: #f0f0f0;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn-primary {
+  background-color: white;
+  color: var(--color-primary);
+  border-color: white;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.category-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  display: block;
+  background-color: var(--color-primary);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 0.8s ease;
+  opacity: 0.85;
+}
+
+.category-card:hover img {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+
+.category-card-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+.category-card-content h2 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.category-card-content span {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 4px;
+  transition: border-color var(--transition-normal);
+}
+
+.category-card:hover .category-card-content span {
+  border-color: white;
+}
+
+.link-with-line {
+  display: inline-block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 2px;
+  margin-top: 1rem;
+}
+
+.about-section {
+  margin-top: var(--spacing-xl);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
