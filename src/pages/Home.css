@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .home {
   background-color: black;
   color: white; /* Also set text to white for readability */
@@ -19,6 +20,8 @@
   border-bottom-color: white;
 }
 
+=======
+>>>>>>> 94ae42a758ba6f9bb245851d7a227b5d3b5fafdf
 .hero {
   position: relative;
   height: calc(100vh - 80px);
@@ -157,6 +160,10 @@
 }
 
 .about-section {
+<<<<<<< HEAD
+=======
+  background-color: var(--color-surface);
+>>>>>>> 94ae42a758ba6f9bb245851d7a227b5d3b5fafdf
   margin-top: var(--spacing-xl);
 }
 

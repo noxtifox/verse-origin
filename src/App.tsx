@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
+<<<<<<< HEAD
 import { Routes, Route, useLocation } from 'react-router-dom';
+=======
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+>>>>>>> 94ae42a758ba6f9bb245851d7a227b5d3b5fafdf
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
@@ -21,6 +25,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
+<<<<<<< HEAD
     <div className="app">
       <ScrollToTop />
       <Navbar />
@@ -39,4 +44,27 @@ function App() {
   );
 }
 
+=======
+    <HashRouter>
+      <div className="app">
+        <ScrollToTop />
+        <Navbar />
+        <CartDrawer />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HashRouter>
+  );
+}
+
+
+>>>>>>> 94ae42a758ba6f9bb245851d7a227b5d3b5fafdf
 export default App;

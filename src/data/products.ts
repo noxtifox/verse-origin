@@ -28,7 +28,11 @@ export const products: Product[] = [
     category: 'Men',
     price: 2499,
     colors: ['White', 'Navy'],
+<<<<<<< HEAD
     image1: 'https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=800&auto=format&fit=crop',
+=======
+    image1: 'https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?q=80&w=800&auto=format&fit=crop',
+>>>>>>> 94ae42a758ba6f9bb245851d7a227b5d3b5fafdf
     image2: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=800&auto=format&fit=crop',
     description: 'The ultimate smart-casual shirt, featuring a soft collar and a slightly looser fit. Made with breathable cotton-linen blend.',
     isNew: true
